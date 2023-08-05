@@ -1,0 +1,34 @@
+.user-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &.hidden-layout {
+    visibility: hidden;
+  }
+
+  .empty-effect {
+    margin-top: 85px;
+  }
+  .user-layout-container {
+    .flex {
+      display: flex;
+      gap: 20px;
+      .children {
+        width: 70%;
+        height: 100%;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .user-layout-container {
+      .flex {
+        flex-direction: column;
+        .children {
+          margin-bottom: 23px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.scroll-to-top {
+  background-color: #2be4ac;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+
+  .scroll-progress {
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    background-color: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #2be4ac;
+
+    .img-scroll-to-top {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

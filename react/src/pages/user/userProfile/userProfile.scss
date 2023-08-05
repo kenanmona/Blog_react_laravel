@@ -1,0 +1,83 @@
+.profile-card11{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 25px ;
+    border: 1px solid #0e4bf1;
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.1) ;
+    position: relative;
+    margin: 40px auto;
+    margin-top: 120px;
+}
+.profile-card11::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
+    height: 36%;
+    width: 100%;
+    background-color: #4070f4;
+}
+.image11 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4 ;
+    padding: 3px;
+    margin-bottom: 10px ;
+}
+.image11 .profile-img11 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+
+}
+.profile-card11 .text-data11{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+.text-data11 .name11{
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 10px;
+
+}
+.text-data11 .email11{
+    font-size: 22px;
+    font-weight: 300;
+    padding-top: 10px;
+    border-top: 2px solid #0e4bf1;
+
+}
+.profile-card11 .button11{
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+
+.button11 .edit11 {
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 10px;
+    // padding: 8px 24px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.button11 .edit11:hover {
+background-color: #0e4bf1;
+}

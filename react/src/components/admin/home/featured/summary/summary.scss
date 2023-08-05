@@ -1,0 +1,17 @@
+.item{
+    text-align: center;
+    color: #777;
+
+    .item-result{
+        display: flex;
+        margin-top: 5px;
+        font-size: 12px;
+
+        &.positve{
+            color:green;
+        }
+        &.negative{
+            color:red;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.tag-container {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  top: 188px;
+  left: 10px;
+  width: 61%;
+  color: white;
+
+  .article-tag {
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+
+    &:nth-child(odd) {
+      background-color: #67056a;
+    }
+    &:nth-child(even) {
+      background-color: #ec920a;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.social-speed-dial {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  overflow: hidden;
+  border-radius: 120px;
+  z-index: 100;
+  .social-icon {
+    position: relative;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    z-index: 9;
+    transition: 0.4s;
+    height: 200px;
+
+    > span {
+      background-color: rgba(16, 201, 233, 0.705);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+    }
+  }
+  .open-icon {
+    animation: test 0.4s;
+    top: 0;
+  }
+  @keyframes test {
+    0% {
+      top: 200px;
+    }
+    50% {
+      top: -20px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  .speed-dial-button {
+    position: relative;
+    z-index: 99;
+    font-weight: bold;
+    backdrop-filter: blur(120px);
+    background-color: rgba(16, 201, 233, 0.705);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    .icon {
+      position: absolute;
+      left: 5px;
+      font-size: 41px;
+      color: whitesmoke;
+    }
+    .crash {
+      animation: crash 0.7s linear infinite;
+    }
+    @keyframes crash {
+      0%,
+      10%,
+      20%,
+      50%,
+      80%,
+      100% {
+        left: 7px;
+      }
+      40%,
+      60% {
+        left: 3px;
+      }
+    }
+    .display {
+      display: none;
+    }
+    .rotate {
+      animation: rotate 0.4s forwards;
+    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(30deg);
+      }
+      50% {
+        transform: rotate(90deg);
+      }
+      100% {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

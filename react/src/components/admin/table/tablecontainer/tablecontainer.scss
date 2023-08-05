@@ -1,0 +1,17 @@
+@use '../../../../../public/scss/mixin/mixin' as *;
+
+.tableContainer{
+    margin: 20px;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        h3{
+            margin: 10px;
+            color: #777;
+        }
+        .icon-with-animation{
+
+            @include icon_with_animation(whitesmoke,15px);
+          }
+        }
+}

@@ -1,0 +1,15 @@
+.radio{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    .content{
+        margin-top: 10px;
+        display: flex;
+        .radioContent{
+            margin-left: 10px;
+           
+        }
+
+    }
+}

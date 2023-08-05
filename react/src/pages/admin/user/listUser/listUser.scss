@@ -1,0 +1,17 @@
+@use "../../../../../public/scss/mixin/mixin" as *;
+.list-user {
+  .icon-without-animation {
+    @include icon_without_animation(whitesmoke, 15px);
+  }
+  .button-list {
+    display: none;
+  }
+  .button-settings {
+    > .button-list {
+      display: flex;
+      > svg {
+        font-size: 20px;
+      }
+    }
+  }
+}

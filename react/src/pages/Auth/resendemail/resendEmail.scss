@@ -1,0 +1,19 @@
+.resend-email{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 0.3px solid rgba(219, 219, 219, 0.486);
+    padding: 30px;
+    input{
+      width: 300px;
+    }
+  }
+
+}

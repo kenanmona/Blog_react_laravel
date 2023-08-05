@@ -1,0 +1,21 @@
+.layout {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  .layout-container {
+    flex: 6;
+    position: relative;
+  }
+  &.dark {
+    background-color: #222;
+    .sideBar {
+      background-color: #222;
+    }
+    .table {
+      background-color: #222;
+      .tableCell {
+        color: whitesmoke;
+      }
+    }
+  }
+}

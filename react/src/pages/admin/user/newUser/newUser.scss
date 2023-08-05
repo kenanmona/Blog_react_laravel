@@ -1,0 +1,37 @@
+@use "../../../../../public/scss/mixin/mixin" as *;
+.new-user {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+
+  .top {
+    @include shadow(10px);
+    h3 {
+      color: #777;
+    }
+  }
+  .container {
+    @include shadow(50px);
+    .bottom {
+      display: flex;
+      margin: 20px;
+      margin-top: 20px;
+      .left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+      .right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+    .button {
+      @include flex(flex-end, flex-end);
+      margin: auto;
+    }
+  }
+}

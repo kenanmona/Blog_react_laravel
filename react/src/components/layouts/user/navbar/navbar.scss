@@ -1,0 +1,180 @@
+.navbar-user {
+  position: fixed;
+  box-shadow: 0 0 10px #ddd;
+  background-color: white;
+  width: 100%;
+  z-index: 1000;
+  transition: 0.6s;
+  top: 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      /* font-size: 26px;
+      font-weight: bold; */
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* letter-spacing: 5px; */
+      /* color: rgb(0, 140, 255); */
+      > img {
+        height: 100%;
+      }
+    }
+    .menu {
+      cursor: pointer;
+      display: none;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 20px;
+      .close {
+        cursor: pointer;
+        display: none;
+      }
+      > li {
+        position: relative;
+        > a,
+        span {
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 60px;
+          position: relative;
+          color: #777;
+          /* margin-left: 20px; */
+          transition: 0.3s;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: aqua;
+            bottom: 0;
+            left: -100%;
+            transition: 0.3s;
+          }
+          &:hover::before {
+            left: 0;
+          }
+        }
+        span {
+          cursor: pointer;
+
+          .arrow {
+            font-size: 18px;
+            transition: 0.3s;
+            transform: rotate(0deg);
+            &.rotate {
+              transform: rotate(180deg) !important;
+            }
+          }
+        }
+        .note-user {
+          overflow: visible;
+          > .counter {
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            position: absolute;
+            top: 15px;
+            right: -5px;
+          }
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      .main-nav {
+        &.main-nav-show {
+          left: 0;
+        }
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        background-color: rgba(51, 49, 49, 0.877);
+        left: -100%;
+        height: 100vh;
+        width: 300px;
+        margin: 0;
+        margin: 0;
+        padding: 0;
+        gap: 10px;
+        transition: 0.7s;
+
+        > li {
+          width: 100%;
+          margin: 10px auto;
+
+          > a {
+            width: 100%;
+            margin: 0;
+            color: whitesmoke;
+
+            &:hover {
+              background-color: transparent;
+            }
+          }
+          span {
+            color: white;
+          }
+          .note-user {
+            width: fit-content;
+            margin: auto;
+          }
+        }
+        .close {
+          display: flex;
+          align-self: flex-end;
+          margin: 17px;
+          color: white;
+        }
+      }
+      @media (max-width: 400px) {
+        .main-nav {
+          width: 100%;
+        }
+      }
+      .menu {
+        display: block;
+      }
+    }
+  }
+  .item{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+    .icon{
+        font-size: 20px;
+
+    }
+    .avatar{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color:#7451f8;
+
+        .img-profile {
+            width: 100%;
+            border-radius: 50%;
+            height: 100%;
+            display: block;
+        }
+    }
+}
+}

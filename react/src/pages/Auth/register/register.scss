@@ -1,0 +1,40 @@
+.register {
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 0.3px solid rgba(219, 219, 219, 0.486);
+    padding: 30px;
+    margin-top: 30px;
+
+    input {
+      width: 300px;
+    }
+    .form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 50px;
+      width: 300px;
+      border-radius: 5px;
+      border: 2px dashed #6990f2;
+      .icon {
+        font-size: 20px;
+        color: #6990f2;
+      }
+      p {
+        color: #6990f2;
+        font-size: 10px;
+        margin-top: 15px;
+      }
+    }
+  }
+}

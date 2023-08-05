@@ -1,0 +1,245 @@
+.about {
+  // background-color: #0d47a1;
+  padding: 40px 0;
+  padding-top: 100px;
+
+  .about-person {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 30px #00000061;
+    padding: 65px 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      box-shadow: 10px 10px 60px 40px #7551f8be;
+      top: 40px;
+      right: 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      box-shadow: 10px 10px 60px 40px #7551f8be;
+      bottom: 40px;
+      left: 0;
+    }
+
+    &:not(:first-of-type) {
+      margin-top: 30px;
+    }
+
+    .social-media {
+      position: absolute;
+      bottom: 5px;
+      right: 0;
+      padding: 3px 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .social-icon {
+        cursor: pointer;
+        color: #777;
+
+        &:first-of-type:hover {
+          color: #0072b1;
+        }
+        &:last-of-type:hover {
+          color: #171515;
+        }
+      }
+    }
+
+    .img-box {
+      position: relative;
+      z-index: 1;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 250px;
+        height: 370px;
+        background-color: #fdd835;
+        top: -35px;
+        left: 25px;
+        border-radius: 15px;
+        z-index: -1;
+      }
+
+      .img-person {
+        display: block;
+        padding: 15px;
+        background-color: white;
+        border: 1px solid #ccc;
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    .about-me {
+      width: 50%;
+      color: #333;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: ",,";
+        position: absolute;
+        font-size: 60px;
+        font-weight: 900;
+        color: rgba(51, 51, 51, 0.95);
+      }
+      &::before {
+        top: 70px;
+        left: -60px;
+        transform: rotate(180deg);
+      }
+      &::after {
+        bottom: 30px;
+        right: -15px;
+      }
+
+      .name-person {
+        letter-spacing: 8px;
+        font-size: 48px;
+        font-weight: 500;
+        position: relative;
+
+        /* &::after {
+          content: "";
+          position: absolute;
+          width: 40%;
+          height: 2px;
+          background-color: white;
+        } */
+      }
+
+      .field-person {
+        margin-bottom: 20px;
+        color: rgb(175, 175, 175);
+        letter-spacing: 3px;
+        font-size: 13px;
+      }
+
+      .summary {
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 1.5;
+      }
+
+      .download-cv {
+        display: block;
+        border: none;
+        background-color: #7451f8;
+        border-radius: 3px;
+        width: fit-content;
+        height: fit-content;
+        text-transform: uppercase;
+        transition: 0.3s;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        padding: 10px;
+        margin: 15px auto 0;
+        color: white;
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 40px;
+          width: 0px;
+          top: 0px;
+          left: -110%;
+          transform: rotate(-40deg);
+          transition: 0.5s ease-in-out;
+          box-shadow: 2px 4px 15px 5px rgb(238, 234, 234);
+        }
+        &:hover::before {
+          left: 120%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) and (min-width: 768px) {
+    .about-person {
+      .about-me {
+        &::before {
+          font-size: 40px;
+          top: 85px;
+          left: -26px;
+          font-weight: bold;
+        }
+        &::after {
+          font-size: 40px;
+          bottom: 48px;
+          right: 12px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .about-person {
+      flex-direction: column;
+      gap: 80px;
+      text-align: center;
+      padding: 65px 0 30px;
+
+      .about-me {
+        width: 100%;
+        padding: 0 30px;
+
+        &::before {
+          top: 55px;
+          left: 30px;
+          font-size: 45px;
+        }
+        &::after {
+          bottom: 25px;
+          right: 30px;
+          font-size: 45px;
+        }
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .about-person {
+      .about-me {
+        &::before {
+          top: 45px;
+        }
+        &::after {
+          bottom: 25px;
+        }
+        .name-person {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  @media (max-width: 360px) {
+    .about-person {
+      padding: 30px 10px;
+      .img-box {
+        .img-person {
+          width: 100%;
+          height: auto;
+        }
+        &::after {
+          display: none;
+        }
+      }
+      .about-me {
+        padding: 0;
+
+        &::before,
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

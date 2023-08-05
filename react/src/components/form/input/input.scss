@@ -1,0 +1,23 @@
+.input{
+  display:flex;
+  flex-direction: column;
+  
+   label{
+    order: -1;
+
+  }
+ 
+  input{
+        width: 80%;
+        padding: 2px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #ece8ff;
+        color: grey;
+        font-size: 16px;
+
+        
+       }
+}
+
+

@@ -1,0 +1,28 @@
+button {
+  border: none;
+  background-color: #7451f8 !important;
+  border-radius: 3px;
+  width: 100px;
+  height: 30px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  color: whitesmoke;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 0px;
+    top: 0px;
+    left: -110%;
+    transform: rotate(-40deg);
+    transition: 0.5s ease-in-out;
+    box-shadow: 2px 4px 15px 5px rgb(238, 234, 234);
+  }
+  &:hover::before {
+    left: 120%;
+  }
+}

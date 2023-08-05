@@ -1,0 +1,54 @@
+@use '../../../../../public/scss/mixin/mixin' as * ;;
+.widget{
+    @include flexWithoutAlign(space-between);
+    flex: 1; 
+    padding: 10px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(218, 216, 216, 0.75); 
+    box-shadow: 2px 4px 10px 1px rgba(218, 216, 216, 0.75);
+    border-radius: 10px;
+    height: 150px;
+   
+    .left , .right{
+        text-transform: uppercase;
+        @include flexWithoutAlign(space-between);
+        flex-direction: column;
+        .title{
+            font-size:14px ;
+            font-weight:bold ;
+            color:grey ;
+        }
+        .counter{
+            @include flex(center,center);
+            font-size:28px ;
+            font-weight:300 ;
+            color:rgb(110, 110, 110) ;
+        }
+        .link{
+            width: max-content;
+            font-size:12px ;
+            border-bottom: 0.4px solid gray ; 
+            cursor: pointer;
+            color:rgb(109, 108, 108) ;
+        }
+
+        .percentage{
+            @include flex(center,center);
+            font-size: 13px;
+            &.positive{
+                color: green;
+            }
+            &.negative{
+                color: red;
+            }
+
+        }
+
+        .icon{
+            font-size: 18px;
+            padding: 5px;
+            background-color: rgba(134, 8, 107, 0.322);
+            border-radius: 5px;
+            align-self: flex-end;
+        }
+    }
+}

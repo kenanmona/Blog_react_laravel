@@ -1,0 +1,25 @@
+@use "../../../../../public/scss/mixin/mixin" as *;
+.new-category {
+  margin: 20px;
+
+  .top {
+    @include shadow(10px);
+    h3 {
+      color: #777;
+    }
+  }
+  .container {
+    @include shadow(50px);
+    .bottom {
+      display: flex;
+      margin: 20px;
+      margin-top: 20px;
+      .input-category {
+        width: 50%;
+      }
+    }
+    .button {
+      margin: auto;
+    }
+  }
+}

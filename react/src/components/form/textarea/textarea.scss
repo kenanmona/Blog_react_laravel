@@ -1,0 +1,24 @@
+ .textarea{
+    display:flex;
+    flex-direction: column;
+    label{
+        order: -1;
+        position: absolute; 
+        transition: 0.3s ease;
+    
+      }
+    textarea{
+        max-width: 80%;
+        width: 80%;
+        padding: 20px;
+        color: grey;
+        font-size: 16px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #ece8ff;
+        height: 10px;
+      
+        
+    }
+
+ }

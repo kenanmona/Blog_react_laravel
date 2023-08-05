@@ -1,0 +1,81 @@
+.notifications-user {
+  position: fixed;
+  bottom: -100%;
+  right: 15px;
+  width: 300px;
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  // border: 2px solid #ccc;
+  box-shadow: 0 0 10px 2px #ddd;
+  border-radius: 6px;
+  scroll-behavior: smooth;
+  transition: 0.4s;
+  z-index: 999;
+  visibility: hidden;
+
+  &.open-notes {
+    visibility: visible;
+    bottom: 0;
+    z-index: 999999;
+  }
+
+  .notifications-title {
+    background-color: #3284f7;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    width: 300px;
+
+    .notifications-close {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .notifications-container {
+    /* margin-top: 58px; */
+
+    .notification-content {
+      height: fit-content;
+      color: #333;
+      padding: 5px 10px 10px;
+
+      &:not(:last-of-type) {
+        border-bottom: 1px solid #ddd;
+      }
+      .url-notification {
+        color: #333;
+      }
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #f6f6f6;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #00c6ff;
+    border-radius: 6px;
+  }
+}
+@media (max-width: 400px) {
+  .notifications-user {
+    position: fixed;
+    width: 100%;
+    right: 0;
+
+    .notifications-title {
+      width: 100%;
+      position: sticky;
+      top: 0;
+    }
+  }
+}

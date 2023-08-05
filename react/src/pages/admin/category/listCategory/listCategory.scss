@@ -1,0 +1,6 @@
+@use "../../../../../public/scss/mixin/mixin" as *;
+.list-category {
+  .icon-without-animation {
+    @include icon_without_animation(whitesmoke, 15px);
+  }
+}

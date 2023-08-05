@@ -1,0 +1,117 @@
+.landing {
+  width: 100%;
+  /* height: 600px; */
+  margin-top: 110px;
+  .flex-landing {
+    display: flex;
+    gap: 5px;
+  }
+
+  .left-side {
+    flex: 1;
+    height: 598px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      backdrop-filter: blur(2px);
+      background-color: #00000094;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+  @media (max-width: 767px) {
+    .flex-landing {
+      flex-direction: column;
+      // height: 100vh; /* 600px */
+
+      .left-side {
+        display: none;
+      }
+    }
+  }
+
+  .right-side {
+    flex: 1;
+    height: 598px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .top-side {
+      flex: 1;
+      overflow: hidden;
+      position: relative;
+      max-width: 100%;
+      &::before {
+        content: "";
+        position: absolute;
+        backdrop-filter: blur(2px);
+        background-color: #00000094;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    }
+    .bottom-side {
+      flex: 1;
+      display: flex;
+      gap: 5px;
+      .left-bottom-side {
+        flex: 1;
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        &::before {
+          content: "";
+          position: absolute;
+          backdrop-filter: blur(2px);
+          background-color: #00000094;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+      }
+      .right-bottom-side {
+        flex: 1;
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        &::before {
+          content: "";
+          position: absolute;
+          backdrop-filter: blur(2px);
+          background-color: #00000094;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+      }
+    }
+    @media (max-width: 600px) {
+      /* 500 */
+      .top-side {
+        height: 147px;
+      }
+      .bottom-side {
+        flex-direction: column;
+        .left-bottom-side {
+          height: 147px;
+        }
+        .right-bottom-side {
+          height: 147px;
+        }
+      }
+    }
+  }
+}

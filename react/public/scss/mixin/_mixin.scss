@@ -1,0 +1,42 @@
+@mixin flex($jsutify, $align) {
+  display: flex;
+  justify-content: $jsutify;
+  align-items: $align;
+}
+
+@mixin flexWithoutAlign($jsutify) {
+  display: flex;
+  justify-content: $jsutify;
+}
+
+@mixin shadow($padding) {
+  padding: $padding;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(218, 216, 216, 0.75);
+  box-shadow: 2px 4px 10px 1px rgba(218, 216, 216, 0.75);
+}
+
+@mixin icon_without_animation($color, $font) {
+  position: relative;
+  color: $color;
+  font-size: $font;
+}
+@mixin icon_with_animation($color, $font) {
+  position: relative;
+  color: $color;
+  font-size: $font;
+  animation: button 2s linear infinite;
+  @keyframes button {
+    0%,
+    10%,
+    20%,
+    50%,
+    80%,
+    100% {
+      top: 0;
+    }
+    40%,
+    60% {
+      top: 5px;
+    }
+  }
+}

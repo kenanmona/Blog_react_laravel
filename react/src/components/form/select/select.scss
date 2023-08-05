@@ -1,0 +1,38 @@
+.select{
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    select{
+        width: 80%;
+        border: none;
+        height: 40px;
+        background-color: white;
+        border-bottom: 1px solid #ece8ff;
+        
+        option{
+            background-color: white;
+            color: black;
+        }
+
+    }
+}
+.selectTag{
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    select{
+        width: 80%;
+        border: none;
+        height: 100px;
+        background-color: white;
+        border-bottom: 1px solid #ece8ff;
+        
+        option{
+            background-color: white;
+            color: black;
+        }
+
+    }
+}

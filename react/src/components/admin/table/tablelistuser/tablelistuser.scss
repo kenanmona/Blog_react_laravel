@@ -1,0 +1,19 @@
+@use "../../../../../public/scss/mixin/mixin" as *;
+
+.table {
+  .head-table {
+    background-color: #7551f8b6;
+    .tableCell {
+      color: white;
+    }
+  }
+  .tableCell {
+    img{
+      width: 100px;
+      height: 100px;
+    }
+    .button-settings {
+      display: flex;
+    }
+  }
+}

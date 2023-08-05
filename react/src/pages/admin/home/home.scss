@@ -1,0 +1,25 @@
+ @use '../../../../public/scss/mixin/mixin' as *;
+
+ .home{
+
+   margin: 30px;
+    .widgets , .charts{
+      display: flex;
+      gap: 20px;
+    }
+
+    .charts{
+      padding-top: 18px; 
+    }
+
+    .list-container{
+      @include shadow(20px);
+      margin-top: 20px;
+      .list-title{
+        color: #777;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+
+    }
+  }
